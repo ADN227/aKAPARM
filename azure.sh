@@ -1,0 +1,1 @@
+az deployment group create --name aKp --resource-group aKGAM --template-file azuredeploy.json 
