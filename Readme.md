@@ -1,7 +1,7 @@
 # Crear una plantilla de ARM
 ![](https://akncus.blob.core.windows.net/git/8/K_073.jpg)
 
-Una de las formas de manejar es con azure-cli. Para crear una plantilla con azure-cli usamos las opciones:
+Una de las formas de manejar es con azure-cli. Para crear una plantilla con azure-cli usamos las [opciones](https://learn.microsoft.com/es-mx/cli/azure/get-started-with-azure-cli#common-azure-cli-commands):
 
 - **deployment**: Para crear una plantilla de deployment.
 - **create**: Para crear una plantilla de arm.
@@ -13,9 +13,10 @@ Una de las formas de manejar es con azure-cli. Para crear una plantilla con azur
 
 Para crear una plantilla de ARM necesitamos un archivo de plantilla con extension [```.json```](azuredeploy.json).
 
-en una terminal ejecutamos el comando:
-
+en una terminal ejecutamos el comando: 
+    
     az group deployment create --name <my-deployment> --resource-group <my-resource-group> --template-file <my-template>.json
+    
 
 Si revisamos los recursos del grupo de recursos, podemos ver la cuenta de almacenamiento correspondiente a la plantilla.
 ![](https://akncus.blob.core.windows.net/git/8/K_076.jpg)
